@@ -1,5 +1,6 @@
 import "./App.css";
 import AvatarIMG from './assets/avatar.png';
+import ItemIMG from './assets/item.png';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
           <div className="min-h-screen flex flex-col">
             <div className="bg-white px-8 pt-8 pb-4 flex justify-between">
               <h1 className="text-2xl font-semibold text-[38px] text-[#2AB7DD]">JIIBS.</h1>
-              <i className="fas fa-caret-square-o-left">3</i>
+              <i className="fas fa-chevron-left text-[#999B9F]"></i>
             </div>
             <div className="flex-grow bg-white">
               <nav className="flex flex-col p-4">
@@ -51,7 +52,7 @@ function App() {
                 <div className="w-full">
                   <div className="flex justify-between">
                     <div className="font-medium text-gray-700">Anagram Nomad</div>
-                    <i className="fa fa-sign-out">3</i>
+                    <i className="fas fa-arrow-right text-[#999B9F]"></i>
                   </div>
                   <div className="text-sm text-gray-500">Logout</div>
                 </div>
@@ -65,7 +66,7 @@ function App() {
               <h1 className="text-xl font-semibold text-gray-700">Units</h1>
             </div>
             <div className="flex items-center">
-              <button className="text-white bg-blue-500 px-4 py-2 rounded shadow">Add Units</button>
+              <button className="text-white bg-[#2AB7DD] px-4 py-2 rounded shadow">Add Units</button>
             </div>
           </header>
 
@@ -92,12 +93,13 @@ function App() {
               </div>
 
             </div>
-            <table className="text-left w-full border-collapse">
+            <table className="text-left w-full border-collapse table-auto">
               <thead className="bg-[#F7F7F7]">
                 <tr>
-                  <th className="py-2 px-6 text-sm text-grey-dark border-b border-grey-light">
+                  <th className="py-2 px-6 text-sm text-grey-dark border-b border-grey-light w-10">
                     <input type="checkbox" />
                   </th>
+                  <th className="py-2 px-6 text-sm text-grey-dark border-b border-grey-light w-20"></th>
                   <th className="py-2 px-6 text-sm text-grey-dark border-b border-grey-light">Units</th>
                   <th className="py-2 px-6 text-sm text-grey-dark border-b border-grey-light">Status</th>
                   <th className="py-2 px-6 text-sm text-grey-dark border-b border-grey-light">Occupancy</th>
@@ -111,11 +113,62 @@ function App() {
                   <td className="py-4 px-6 border-b border-grey-light">
                     <input type="checkbox" />
                   </td>
+                  <td className="py-2 px-4 border-b border-grey-light">
+                    <img className="rounded-full" src={ItemIMG} alt="Item image"/>
+                  </td>
                   <td className="py-4 px-6 border-b border-grey-light">121 Founders #1302</td>
                   <td className="py-4 px-6 border-b border-grey-light">
                     <span className="bg-green-200 text-green-700 py-1 px-3 rounded-full text-xs">On-Market</span>
                   </td>
                   <td className="py-4 px-6 border-b border-grey-light">Immediate</td>
+                  <td className="py-4 px-6 border-b border-grey-light">1</td>
+                  <td className="py-4 px-6 border-b border-grey-light">1</td>
+                  <td className="py-4 px-6 border-b border-grey-light">$3500</td>
+                </tr>
+                <tr className="hover:bg-grey-lighter">
+                  <td className="py-4 px-6 border-b border-grey-light">
+                    <input type="checkbox" />
+                  </td>
+                  <td className="py-2 px-4 border-b border-grey-light">
+                    <img className="rounded-full" src={ItemIMG} alt="Item image"/>
+                  </td>
+                  <td className="py-4 px-6 border-b border-grey-light">121 Founders #1302</td>
+                  <td className="py-4 px-6 border-b border-grey-light">
+                    <span className="bg-green-200 text-green-700 py-1 px-3 rounded-full text-xs">On-Market</span>
+                  </td>
+                  <td className="py-4 px-6 border-b border-grey-light">Immediate</td>
+                  <td className="py-4 px-6 border-b border-grey-light">1</td>
+                  <td className="py-4 px-6 border-b border-grey-light">1</td>
+                  <td className="py-4 px-6 border-b border-grey-light">$3500</td>
+                </tr>
+                <tr className="hover:bg-grey-lighter">
+                  <td className="py-4 px-6 border-b border-grey-light">
+                    <input type="checkbox" />
+                  </td>
+                  <td className="py-2 px-4 border-b border-grey-light">
+                    <img className="rounded-full" src={ItemIMG} alt="Item image"/>
+                  </td>
+                  <td className="py-4 px-6 border-b border-grey-light">121 Founders #1302</td>
+                  <td className="py-4 px-6 border-b border-grey-light">
+                  <span className="bg-gray-200 text-black py-1 px-3 rounded-full text-xs">Leased</span>
+                  </td>
+                  <td className="py-4 px-6 border-b border-grey-light">02/06/2024</td>
+                  <td className="py-4 px-6 border-b border-grey-light">1</td>
+                  <td className="py-4 px-6 border-b border-grey-light">1</td>
+                  <td className="py-4 px-6 border-b border-grey-light">$3500</td>
+                </tr>
+                <tr className="hover:bg-grey-lighter">
+                  <td className="py-4 px-6 border-b border-grey-light">
+                    <input type="checkbox" />
+                  </td>
+                  <td className="py-2 px-4 border-b border-grey-light">
+                    <img className="rounded-full" src={ItemIMG} alt="Item image"/>
+                  </td>
+                  <td className="py-4 px-6 border-b border-grey-light">121 Founders #1302</td>
+                  <td className="py-4 px-6 border-b border-grey-light">
+                  <span className="bg-gray-200 text-black py-1 px-3 rounded-full text-xs">Leased</span>
+                  </td>
+                  <td className="py-4 px-6 border-b border-grey-light">04/03/2024</td>
                   <td className="py-4 px-6 border-b border-grey-light">1</td>
                   <td className="py-4 px-6 border-b border-grey-light">1</td>
                   <td className="py-4 px-6 border-b border-grey-light">$3500</td>
