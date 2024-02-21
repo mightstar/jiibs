@@ -20,8 +20,7 @@ function App() {
                   href="#"
                   className="flex items-center py-2 px-4 text-gray-500 hover:text-gray-900"
                 >
-                  <i className="fas fa-home mr-3"></i>
-                  Home
+                  <i className="fas fa-home mr-3"></i>Home
                 </a>
                 <a
                   href="#"
@@ -32,7 +31,7 @@ function App() {
                 </a>
                 <a
                   href="#"
-                  className="flex items-center py-2 px-4 bg-gray-100 text-gray-900 rounded-md"
+                  className="flex items-center py-2 px-4 bg-gray-100 font-bold text-gray-900 rounded-md"
                 >
                   <i className="fas fa-th mr-3"></i>
                   Units
@@ -68,7 +67,7 @@ function App() {
               </nav>
             </div>
             <div className="bg-white p-4">
-              <div className="flex">
+              <div className="flex items-center">
                 <div className="flex-shrink-0 mr-3">
                   <img
                     className="h-10 w-10 rounded-full"
@@ -77,14 +76,12 @@ function App() {
                   />
                 </div>
                 <div className="w-full">
-                  <div className="flex justify-between">
                     <div className="font-medium text-gray-700">
                       Anagram Nomad
                     </div>
-                    <i className="fas fa-arrow-right text-[#999B9F]"></i>
-                  </div>
                   <div className="text-sm text-gray-500">Logout</div>
                 </div>
+                <div><i className="fas fa-arrow-right text-[#999B9F]"></i></div>
               </div>
             </div>
           </div>
